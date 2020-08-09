@@ -80,28 +80,4 @@ print(count,'/',total_stop,' stop words found in the last ',total_stop,' words o
 print('Overlap Percentage = ',(count/(len(Obs_stops)))*100,' %.')
         
 
-"""
-Observations Made :
-    1) NLTK class has a total of 179 stop words.
-    2)Machine was not able to plot bar graph for brown corpus as number of unique
-      words ,so in order to get the Threshold value I used another method mentioned 
-      above in the code.
-      
-Result 1: Without removal of Special Characters.
-    Brown Corpus has 1161192 words and contains 56067 unique words.
-    Brown Corpus has 155 stop words of the 179 stop words in English Language.
-    90 / 155 stop words found in the last 155 words of sorted brown corpus.
-    Overlap Percentage =  57.692307692307686 %.
 
-Result 2: With removal of Special Characters.
-    Brown Corpus has  1040623  words and contains  43375  unique words
-    Brown Corpus has  151  stop words of the 179 stop words in English Language
-    99 / 151  stop words found in the last  151  words of sorted brown corpus.
-    Overlap Percentage =  65.13157894736842  %.
-   
-Conclusion : When special characters were removed (especially ' ) new stop words
-             like 'll','re','ve','t','d','s' came into existence so the number of 
-             stop words in brown corpus changes.
-
-
-"""
